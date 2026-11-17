@@ -1,0 +1,143 @@
+/* 1. Variables de colores pastel y estilos globales */
+:root {
+  --principal: #a3b18a;       
+  --secundario: #e8a598;      
+  --fondo: #fcf8f6;           
+  --tarjeta-bg: #ffffff;      
+  --texto: #4a4e69;           
+  --borde: #e2a7be;           
+  --sombra: rgba(163, 177, 138, 0.15); 
+}
+
+/* 2. Reset básico y cuerpo */
+* { 
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif; 
+  color: var(--texto);
+  background-color: var(--fondo);
+  line-height: 1.6;
+}
+
+/* 3. Encabezado y Navegación */
+header {
+  background-color: var(--principal);
+  color: #ffffff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif; 
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.95;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--secundario);
+}
+
+/* 4. Contenido Principal */
+main {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600;
+  color: var(--principal);
+  border-bottom: 3px solid var(--secundario);
+  padding-bottom: 0.4rem;
+  display: inline-block;
+  margin-top: 0;
+}
+
+/* 5. Tarjetas de Proyectos */
+#proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background-color: var(--tarjeta-bg);
+  padding: 1.5rem;
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px var(--sombra);
+}
+
+.tarjeta h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+  color: var(--principal);
+}
+
+.tarjeta p strong {
+  color: var(--secundario);
+}
+
+/* 6. Sección Habilidades y Contacto */
+#habilidades ul {
+  padding-left: 1.2rem;
+}
+
+#habilidades li {
+  margin-bottom: 0.5rem;
+}
+
+/* 7. Pie de página */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--principal);
+  color: #ffffff;
+  margin-top: 3rem;
+}
